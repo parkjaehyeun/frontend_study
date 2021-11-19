@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* element selector와 class selector의 조합 */
+        p.large {
+            font-size: 200%;
+        }
+        /* class selector와 class selector의 조합 */
+        .red.big {
+            color: red;
+            font-size: 300%;
+        }
+        /* group selector : 여러개의 selector를 조합 */
+        h2, h3, p.large {
+            color: purple;
+        }
+        /* Descendant Selector : 후손 selector */
+        div h2 {
+            background-color: lightblue;
+        }
+        /* Child Selector : 자식 selector */
+        div > p {
+            background-color: yellow;
+        }
+        /* Adjacent Sibling Selector : div 다음에 바로 나오는 sibling중 첫번째 p */
+        div + p {
+            background-color: green;
+        }
+        /* General Sibling Selector : div 다음에 바로 나오는 sibling중 모든 p */
+        div ~ h4 {
+            background-color: lightcoral;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="large">This paragraph centered and font size is large.</p>
+    <p class="red big">This paragraph font size is large</p>
+    <p class ="red">this is red</p>
+    <p class ="large">this is large</p>
+
+    <div>
+        <h2>My name is Donald.</h2>
+        <h3>I live in Duckburg.</h3>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+        <p>Paragraph 4 in the div.</p>
+    </div>
+    <h4>h4 1. after div</h4>
+    <h4>h4 2. after div</h4>
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+    
+    <div>
+        <h2>My name is Donald.</h2>
+        <h4>h4 1. after div</h4>
+        <h4>h4 2. after div</h4>
+      <p>Paragraph 5 in the div.</p>
+      <p>Paragraph 6 in the div.</p>
+    </div>
+    
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>    
+
+    <h4>h4 1. after div</h4>
+    <h4>h4 2. after div</h4>
+</body>
+</html>

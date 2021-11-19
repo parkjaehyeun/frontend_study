@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <from>
+    <h3> 검색어르 ㄹ입력하세여.</h3>
+    <input type = "search" name = "google">
+  </from>
+  <form>
+    홈페이지: <input type= "url" name = "url">
+  </form>
+  <form>
+    <h3> 0~100 범위에서 원하는 지점을 선택</h3>
+    <input type = "range" min= "0" max = "100" name= "range">
+  </form>
+  <form>
+    <h3> 나이를 입력 하세요.</h3>
+    <input type = "number" name ="count" min="1" max="100">
+  </form>
+
+  <form>
+    <h3> 오늘 날짜 입력</h3>
+    today: <input type = "date" name = "today">
+    from: <input type = "date" name ="from" min= "2016-03-01" max="2016-12-27">
+  </form>>
+
+  <form>
+    <h3>버튼 태그사용</h3>
+    <button type = "button" onclick="alert('click1')">클릭-1</button>
+    <input type ="button" onclick="alert('click2')" value = "클릭-2">
+  </form>
+  
+  
+  <h2> 현재 관심을 가지고 있는 학습 주제는 무엇입니까</h2>
+  <form>
+    <input type = "radio" name="sex" value = "male">남자<br>
+    <input type = "radio" name= "sex" value = "female">여자<br>
+    <input type = "submit" value = "제출">
+    <input type = "reset" value = "다시작성">
+
+  </form>
+
+  <h2> 텍스트 공간 입력 양식</h2>
+  <form>
+    <textarea cols= "50" rows="5">텍스트를입력하는곳입니다.</textarea>>
+    <input type = "submit" value= "전송">
+    <input type = "reset" value ="다시작성">
+  </form>
+  <h2> 회원 인증 입력 양식</h2>
+  <form>
+    <label for = "id">ID :</label>
+    <input  name= "id" value = "gamja" type = "text" required> 
+    <label for = "pw">PW : </label>
+    <input name = "pw" value= "hello world" type = "password">
+  </form>
+
+  <h2> GET 방식으로 데이터 전송</h2>
+  <form name="data" action="google.com", method = "GET">
+    <label for="fname">이름: </label>
+    <input name= "fname" value="hongiledong" type = "text"><br>
+    <label for= "depart">전공: </label>
+    <input name= "depart" value = "cs" type = "text">
+  </form> 
+
+  <h2>POST 방식으로 데이터 전송</h2>
+  <form name="data" action= "page.jsp" method = "post">
+    <label for = "fname">이름 :</label>
+    <input name= "fname" value = "hong" type ="text">
+    <label for= "dept">전공 :</label>
+    <input name="dept" value="cs" type ="text">
+
+    <input type = "submit" value = "전송">
+    <input type = "reset" value = "다시작성">
+  </form>w
+    <h2>HTML Forms</h2>
+
+    <form name="login" method="GET" action="/action_page.php">
+
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>     
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page 
+        called "/action_page.php".</p> <br>
+
+    <h2>GET 방식으로 데이터 전송</h2>
+    <form name = "이름" method= "GET" action= "page.jsp">
+
+      <label for="fname">이름 :</label><br>
+      <input name = "fname" value = "HongGilDong" type = "text"><br>
+      <label for="depart">전공 :</label><br>
+      <input name = "depart" value = "HongGilDong" type = "text"><br>
+      <input type = "submit" value = "전송">
+      <input type = "reset" value="다시전송">
+    </form>
+
+</body>
+</html>

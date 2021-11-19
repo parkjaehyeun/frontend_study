@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* pseudo element selector */
+        /* 화면 size가 변경될 때, 첫번 째 line에 적용되는 실제 내용도 달라짐 */
+        p::first-line {
+          color: red;
+          font-variant: small-caps;
+        }
+        p::first-letter {
+          color: blue;
+          font-size: xx-large;
+        }
+        /* 원래 h1의 content 맨 앞에, 새로운 content를 추가 */
+        h1:first-child{
+          background-color: gray;
+        }
+        h1::before {
+          content: url(images/smiley.gif);
+        }
+        /* 원래 h1의 content 맨 뒤에, 새로운 content를 추가 */
+        h1::after {
+          content: url(images/w3schools.jpg);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+  <h1>This is a heading</h1>
+
+  <p>You can use the ::first-line pseudo-element to add a special effect 
+    to the first line of a text. Some more text. And even more, and more, 
+    and more, and more, and more, and more, and more, and more, and more, 
+    and more, and more, and more, and more, and more, and more, and more, 
+    and more, and more, and more, and more, and more, and more, and more, 
+    and more, and more, and more, and more, and more, and more, and more, 
+    and more, and more, and more.</p>
+  <p>this is normal </p>
+    <h1>This is a heading</h1>
+
+</body>
+</html>

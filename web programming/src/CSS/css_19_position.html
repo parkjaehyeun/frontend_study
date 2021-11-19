@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div.static {
+            /* default 값 : static */
+            position: static;
+            border: 3px solid yellow;
+        }
+        /* default값 static의 원래 위치에서 이동 */
+        div.relative {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            border: 3px solid yellowgreen;
+        }
+        /* fixed는 screen 좌표계를 기준으로 설정 */
+        div.fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+        div.rel {
+            /* 부모의 position relative */
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        } 
+
+        div.absolute {
+            /* 부모인 div.rel의 자식으로 absolute */
+            position: absolute;
+            /* 부모 div.rel 좌표계인 (0,0) 기준으로 이동*/
+            top: 10px;
+            right: 20px;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>position: static;</h2>
+    <div class="static">
+        This div element has position: static;
+    </div>
+
+    <h2>position: relative;</h2>
+    <div class="relative">
+        This div element has position: relative;
+    </div>        
+
+    <h2>position: fixed;</h2>   
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+
+    <h2>position: absolute;</h2>
+    <div class="rel">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+      
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+    <p>dummy paragraph</p>
+
+</body>
+</html>

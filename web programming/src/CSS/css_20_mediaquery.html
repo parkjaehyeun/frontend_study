@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- responsive web을 사용할려면 반드시 포함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* 600px, 992px => 2개의 break points */
+
+      /* window width > 992px */
+      /* desktop용 css file 적용 */
+        body {
+          background-color: tan;
+          color: black;
+        }
+        
+        /* 600px < window width <= 992px */
+        /* On screens that are 992px wide or less, the background color is blue */
+        @media screen and (max-width: 992px) {
+          /* tablet용 css file 적용 */
+          body {
+            background-color: blue;
+            color: white;
+          }
+        }
+        /* window크기 <= 600px */
+        
+        /* On screens that are 600px wide or less, the background color is olive */
+        @media screen and (max-width: 600px) {
+          /* mobile phone용 css file을 여기에 적용 */
+          body {
+            background-color: olive;
+            color: white;
+          }
+        }
+    </style>
+        
+</head>
+<body>
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>By default, the background color of the document is "tan". 
+      If the screen size is 992px or less, the color will change to "blue". 
+      If it is 600px or less, it will change to "olive".</p>
+        
+</body>
+</html>

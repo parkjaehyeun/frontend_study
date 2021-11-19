@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* all selector, 전체 html elements 선택 */
+        * {
+            background-color: beige;
+        }
+        /* element selector, 특정 html tag elemets만 선택 */
+        p#k {
+            color: red;
+        }
+        /* id selector, 속성 attribute인 id의 특정 value값만 가진 1개의 element만 선택 */
+        #para1 {
+            text-align: right;
+        }
+        /* class selector, 속성 attribute인 class의 특정 value값만 가진 여러개의 elements 선택 */
+        .center {
+            text-align: center;
+        }
+        .large{
+            font-size : 42px;
+        }
+        .center.large{
+            color:blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+
+    <p id= "k">Every element on the page will be affected by the style.</p>
+    <h1 class="center">Red and center-aligned heading</h1>
+    <p class="center">Red and center-aligned paragraph.</p>
+    <!-- class attribute안에 여러개의 value를 space를 사용하여 선언 가능 -->
+    <p class="center large">This paragraph refers to two classes.</p>
+    <p id="para1">Me too!</p>
+    <p>And me!</p>
+    
+    <div>
+        <h2>My name is Donald.</h2>
+        <h3>I live in Duckburg.</h3>
+    </div>
+</body>
+</html>

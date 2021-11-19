@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+          background-color: lightgrey;
+          width: 300px;
+          /* height:184px; => web browser에서 자동 계산*/
+          padding: 50px;
+          padding-bottom: 400px;
+          border: 15px solid green;
+          margin: 20px;
+          height: 400px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+  <h2>Demonstrating the Box Model</h2>
+
+  <p>The CSS box model is essentially a box that wraps around every HTML element. 
+    It consists of: borders, padding, margins, and the actual content.</p>
+  
+  <div>This text is the content of the box. We have added a 50px padding, 
+    20px margin and a 15px green border. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+    <p>Total Box Width is 470px 
+        = 300px (width)
+          + 100px (left + right padding)
+          + 30px (left + right border)
+          + 40px (left + right margin)
+    </p>
+    
+</body>
+</html>

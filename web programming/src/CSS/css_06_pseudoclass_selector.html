@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 상태 selector */
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+        input:focus{
+            background-color :red;
+        }
+        input:disabled{
+            background-color: gray;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+        <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+        <input type="checkbox" value="Car"> I have a car <br>
+        <input type = "checkbox" disabled = "disabled"> disable<br>
+        <input type = "checkbox" value = "focus"> focus <br>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #pixels {
+          height: 100px;
+          /* width: 600px => width가 600px로 고정 */
+          width: 600px;
+          background-color: tomato;
+        }
+        #normalwidth {
+          height: 200px;
+          /* 50% : screen 전체 넓이의 50%라는 의미 */
+          width: 50%;
+          background-color: powderblue;
+        }
+        #maxwidth {
+          height: 100px;
+          /* max-width : 최대 넓이가 600px이라는 의미, 화면 size가 줄어들면 width도 줄어듬 */
+          max-width: 600px;
+          background-color: blue;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+  <h2>Set the height and width of an element</h2>
+
+  <div id="pixels">This div element has a height of 100px and a width of 500px.</div>
+  <div id="normalwidth">This div element has a height of 200px and a width of 50%.</div>
+  <div id="maxwidth">This div element has a max width of 500px.</div>
+
+
+</body>
+</html>

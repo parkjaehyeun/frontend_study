@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li {
+          /* block-level element인 li tag를 inline element로 바꿈 */
+          display: inline;
+          border: 1px solid red;
+        }
+        span.block {
+          /* inline element인 span tag를 block-level element로 바꿈 */
+          display: block;
+          border: 1px solid green;
+        }
+        h1.hidden {
+          /* screen에서 해당 element를 삭제, 즉 사라지게 만듬 */
+          display: none;
+        }
+        span.inline {
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          padding: 5px;
+          border: 1px solid blue;    
+          background-color: yellow; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Display a list of links as a horizontal menu:</p>
+
+    <ul>
+      <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+      <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+      <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+    </ul>
+    
+    <span class="block">A display property with a value of "block" results in</span> 
+    <span class="block">a line break between the two elements.</span>
+
+    <h1>This is a visible heading</h1>
+    <h1 class="hidden">This is a hidden heading</h1>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+    <h2>display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. 
+      <span class="inline">Aliquam</span> <span class="inline">venenatis</span> 
+      gravida nisl sit amet facilisis. <span style="border:1px solid tomato;">Normal span</span>
+      Nullam cursus fermentum velit sed laoreet. </div>
+
+</body>
+</html>

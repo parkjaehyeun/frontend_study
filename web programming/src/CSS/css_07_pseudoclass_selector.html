@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 구조 selector */
+        p:first-child {
+          background-color: yellow;
+        }    
+        p:last-child {
+          background-color: green;
+        }
+        /* even : 짝수번째 형제만 대상 : 2, 4, 6, 8, ... 번째 형제*/
+        li:nth-child(even) {
+          background: red;
+        }
+        /* 1, 8, 15, 22, 20, ... 형제 */
+        li:nth-child(7n+1) {
+          background: blue;
+        }
+        li:nth-last-child(7n+1){
+          background-color:fuchsia;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <p>This paragraph is the first child of its parent (body).</p>
+
+    <h1>Welcome to My Homepage</h1>
+    <p>This paragraph is not the first child of its parent.</p>
+    <p>This paragraph is the last child of its parent (body).</p>
+
+    <div>
+      <p>This paragraph is the first child of its parent (div).</p>
+      <p>This paragraph is not the first child of its parent.</p>
+      <p>This paragraph is the last child of its parent (div).</p>
+    </div>
+
+    <ul>
+        <li>1. list item</li>
+        <li>2. list item</li>
+        <li>3. list item</li>
+        <li>4. list item</li>
+        <li>5. list item</li>
+        <li>6. list item</li>
+        <li>7. list item</li>
+        <li>8. list item</li>
+        <li>9. list item</li>
+        <li>10. list item</li>
+    </ul>
+</body>
+</html>

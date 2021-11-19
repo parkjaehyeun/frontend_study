@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h3> HTML5 입력 양식의 주요 속성을 연습</h3>
+            <br>
+            쓰기가능<input type ="text" placeholder ="이름입력" autofocus required>
+            읽기전용<input type= "text" readonly>
+            사용안함<input type = "text" disabled>
+            자동완성<input type = "text" autocomplete>
+            <textarea rows= "5" col= "50" spellcheck = "true">오타를 체크합니다</textarea>
+        </fieldset>
+    </form>
+    <form>
+        <select name = "subjects">
+            <option value = "1" selected>html5</option>
+            <option value = "2" selected>html5</option>
+            <option value = "3" selected>html5</option>
+            <option value = "4" selected>html5</option>
+        </select>
+    </form>
+    <form>
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            이름 : <input name ="fname" type = "text"><br><br>
+            학교 : <input name= "school" type = "text"><br>
+            <input type = "submit" value = "제출">
+            <input type = "reset" value = "다시작성">
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe" autofocus><br><br>
+        <input type="submit" value="Submit">
+        <label for="alias">First name:</label><br>
+        <input type="text" id="alias" name="alias" value="Matt" disabled><br>
+      
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678">
+
+    </form>
+    
+</body>
+</html>

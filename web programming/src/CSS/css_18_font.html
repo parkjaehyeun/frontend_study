@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* font family */
+      .p1 {
+        /* "Times New Roman", Times, serif => "Times New Roman" font-family가 존재하면
+        "Times New Roman"를 적용, 없으면 두번째인 Times를 적용, 없으면 마지막 Serif 적용 */
+        font-family: "Times New Roman", Times, serif;
+      }
+      .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .p3 {
+        font-family: "Lucida Console", "Courier New", monospace;
+      }
+      /* font style */
+      p.normal {
+        font-style: normal;
+      }
+      p.italic {
+        font-style: italic;
+      }
+      p.oblique {
+        font-style: oblique;
+      }
+      /* font size */
+      h5 {
+        font-size: 40px;
+      }
+      h6 {
+        font-size: 30px;
+      }
+      /* short hand notation */
+      p.sa {
+        font: 20px Arial, sans-serif;
+      }
+      p.sb {
+        /* font-style font-variant font-weight font-size/line-height font-family */
+        font: italic bold 12px/30px Georgia, serif;
+      }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+  <h1>CSS font-family</h1>
+  <p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+  <p class="p2">This is a paragraph, shown in the Arial font.</p>
+  <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+
+  <p class="normal">This is a paragraph in normal style.</p>
+  <p class="italic">This is a paragraph in italic style.</p>
+  <p class="oblique">This is a paragraph in oblique style.</p>
+
+  <h5>This is heading 1</h5>
+  <h6>This is heading 2</h6>
+
+  <p class="sa">This is a paragraph. The font size is set to 20 pixels, 
+    and the font family is Arial.</p>
+
+  <p class="sb">This is a paragraph. The font is set to italic and bold, 
+    the font size is set to 12 pixels, the line height is set to 30 pixels, 
+    and the font family is Georgia.</p>  
+</body>
+</html>

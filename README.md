@@ -1,5 +1,5 @@
 # web_study
-  https://opentutorials.org/course/3084 생활코딩 web 참고   
+  https://opentutorials.org/course/1688/10245 web 참고   
   목표: BITNAMI WAMP를 사용하여 웹 구현    
 
 # day1

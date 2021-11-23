@@ -1,0 +1,40 @@
+body.white{
+  background-color:white;
+  color:black;
+}
+
+body.black{
+  background-color:black;
+  color:white;
+}
+
+header{
+      border-bottom: 2px solid black;
+      padding: 20px;
+}
+
+nav{
+      width: 200px;
+      border-right: 2px solid black;
+      float: left;
+      height: 600px;
+}
+nav ol{
+      list-style: none;
+      padding-left:0px;
+}
+article {
+      float: left;
+      padding: 30px;
+      width:500px;
+      font-family: KopubBatang;
+}
+
+#control{
+  float:right;
+}
+header img{
+  float: right;
+  height: 100px;
+  width: 100px;
+}

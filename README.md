@@ -19,3 +19,4 @@ $conn = mysqli_connect("localhost", "root", 111111); 이 부분에서 "localhost
 
 # day4     
 form 태그를 통해 간단하게 DB에 데이터입력받기+redirection까지   
+![스크린샷(411)](https://user-images.githubusercontent.com/50009329/142985334-adf3c45c-44cb-4a4a-be54-c01db87119c6.png)

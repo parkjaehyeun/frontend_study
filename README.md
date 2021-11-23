@@ -10,7 +10,9 @@ HTML과 CSS를 활용하여 간단한 웹페이지 만들기
 3. BOOTSTRAP, API(tawk, disqus)활용하여 웹구현
 # day3    
 MYSQL 데이터 구축   
-PHP MYSQLi를 활용하여 웹서버와 mysql를 중계하며 웹페이지 관리   
+PHP MYSQLi를 활용하여 웹서버와 mysql를 중계하며 웹페이지 관리     
+   
+   
 mysql port번호를 default인 3306이 아닌 다른숫자로 설정하신 분은 예제에 적힌    
 $conn = mysqli_connect("localhost", "root", 111111); 이 부분에서 "localhost"를 "127.0.0.1:포트번호"로 바꾸시면 해결됩니다   
 ![image](https://user-images.githubusercontent.com/50009329/142752526-9e0de6e6-d159-47a2-ac06-2f5a3e72f5d4.png)
